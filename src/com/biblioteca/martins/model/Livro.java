@@ -53,4 +53,11 @@ public class Livro {
         this.disponivel = disponivel;
     }
 
+    public String consultarInformacoes() {
+        return "Id: " + id + "\n"
+                + "Título: " + titulo + "\n"
+                + "Autor: " + autor + "\n"
+                + "Ano da Publicação: " + anoPublicacao + "\n"
+                + "Disponibilidade: " + disponivel;
+    }
 }
