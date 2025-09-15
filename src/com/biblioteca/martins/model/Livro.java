@@ -60,4 +60,9 @@ public class Livro {
                 + "Ano da Publicação: " + anoPublicacao + "\n"
                 + "Disponibilidade: " + disponivel;
     }
+
+    public boolean verificarDisponibilidade() {
+        return disponivel;
+    }
+
 }
