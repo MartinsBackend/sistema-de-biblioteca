@@ -65,4 +65,11 @@ public class Livro {
         return disponivel;
     }
 
+    public boolean emprestar() {
+        if (disponivel) {
+            disponivel = false;
+            return true;
+        }
+        return false;
+    }
 }
