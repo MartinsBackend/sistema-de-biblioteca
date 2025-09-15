@@ -72,4 +72,9 @@ public class Livro {
         }
         return false;
     }
+
+    public boolean devolver() {
+        disponivel = true;
+        return true;
+    }
 }
