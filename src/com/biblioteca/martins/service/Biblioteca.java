@@ -21,5 +21,14 @@ public class Biblioteca {
         return livros.removeIf(l -> l.getId() == idLivro && l.isDisponivel());
     }
 
+    public boolean cadastrarUsuario(Usuario u) {
+        if (u == null) {
+            return false;
+        } else if (u.getNome() == null || u.getGmail() == null) {
+            return false;
+        }
+        usuarios.add(u);
+        return true;
+    }
 
 }
