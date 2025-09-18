@@ -17,4 +17,9 @@ public class Biblioteca {
         return true;
     }
 
+    public boolean removerLivro(int idLivro) {
+        return livros.removeIf(l -> l.getId() == idLivro && l.isDisponivel());
+    }
+
+
 }
